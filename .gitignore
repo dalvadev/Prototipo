@@ -1,0 +1,4 @@
+static-server.log
+static-server.err.log
+.DS_Store
+Thumbs.db

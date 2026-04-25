@@ -1,843 +1,205 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Licorería Entre Pisco y Nazca</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Licoreria Entre Pisco y Nazca: bebidas, licores, combos y delivery rapido en una experiencia web moderna."
+    />
+    <meta name="theme-color" content="#7f1d1d" />
+    <meta property="og:title" content="Licoreria Entre Pisco y Nazca" />
+    <meta
+      property="og:description"
+      content="Catalogo digital de licores con busqueda, filtros y pedido rapido."
+    />
+    <meta property="og:type" content="website" />
+    <title>Licoreria Entre Pisco y Nazca</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preload" as="image" href="images/home-img-1.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#catalogo">Saltar al catalogo</a>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- sección cabeza inicio  -->
-    <header>
-        <a href="#" class="logo">Licorería Entre Pisco Y Nazca</a>
-        <nav class="navbar">
-            <a class="active" href="#inicio">Inicio</a>
-            <a href="#bebidas">Bebidas</a>
-            <a href="#nosotros">Sobre Nosotros</a>
-            <a href="#productos">Productos</a>
-            <a href="#contactenos">Contactenos</a>
-        </nav>
-
-        <div class="icons">
-            <!-- iconos   -->
-            <i class="fas fa-bars" id="menu-bars"></i>
-            <a class="fa fa-regular fa-mobile" id="callme" href="tel:+51968624020" target="_blank"></a>
+    <div class="age-gate" id="ageGate" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+      <div class="age-gate__panel">
+        <p class="eyebrow">Contenido para mayores de edad</p>
+        <h2 id="ageTitle">Confirma que tienes 18 anos o mas</h2>
+        <p>
+          Este sitio muestra bebidas alcoholicas. Consume responsablemente y no
+          compartas este contenido con menores de edad.
+        </p>
+        <div class="age-gate__actions">
+          <button class="btn btn--primary" id="confirmAge" type="button">Soy mayor de edad</button>
+          <a class="btn btn--ghost" href="https://www.google.com">Salir</a>
         </div>
-    </header>
-    <!-- terminando el cabecero -->
-
-    <!-- Iniciando la parte de inicio  -->
-    <section class="inicio" id="inicio">
-
-        <div class="swiper-container inicio-slider">
-    
-            <div class="swiper-wrapper wrapper">
-    
-                <div class="swiper-slide slide">
-                    <div class="content">
-                        <span>Nuestro combo</span>
-                        <h3>Cerveza CORONA Extra</h3>
-                        <p>Botella 355ml 6 Pack</p>
-                        <a href="tel:+51968624020" class="btn" target="_blank">ordene ahora</a>
-                    </div>
-                    <div class="image">
-                        <img src="images/home-img-1.png" alt="">
-                    </div>
-                </div>
-    
-                <div class="swiper-slide slide">
-                    <div class="content">
-                        <span>Nuestro combo</span>
-                        <h3>Ron FLOR DE CAÑA </h3>
-                        <p>4 Años Añejo Oro Botella 750ml</p>
-                        <a href="tel:+51968624020" class="btn" target="_blank">ordene ahora</a>
-                    </div>
-                    <div class="image">
-                        <img src="images/home-img-2.png" alt="">
-                    </div>
-                </div>
-    
-                <div class="swiper-slide slide">
-                    <div class="content">
-                        <span>Nuestro combo</span>
-                        <h3>Wisky Red Label</h3>
-                        <p>JOHNNIE WALKER Botella 750ml</p>
-                        <a href="tel:+51968624020" class="btn" target="_blank">ordene ahora</a>
-                    </div>
-                    <div class="image">
-                        <img src="images/home-img-3.png" alt="">
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide">
-                    <div class="content">
-                        <span>Nuestro combo</span>
-                        <h3>Super PACK</h3>
-                        <p>Whisky Old Time + Guaraná 2L + Hielo</p>
-                        <a href="tel:+51968624020" class="btn" target="_blank">ordene ahora</a>
-                    </div>
-                    <div class="image">
-                        <img src="images/home-img-4.png" alt="">
-                    </div>
-                </div>
-    
-            </div>
-    
-            <div class="swiper-pagination"></div>
-    
-        </div>
-    
-    </section>
-    <!-- terminando la parte de inicio  -->
-
-    <!-- iniciando seccion de bebidas  -->
-    <section class="bebidas" id="bebidas">
-
-        <h3 class="sub-heading"> nuestras bebidas </h3>
-        <h1 class="heading"> Licores populares </h1>
-    
-        <div class="box-container">
-    
-            <div class="box">
-                <a class="fas fa-heart"></a>
-                <img src="images/dish-1.png" alt="">
-                <h3>Licor 7 Raíces El Aguajal</h3>
-                <div class="stars">
-                    <i>Botella de 700ml 36°</i>
-                </div>
-                <span>Precio especial</span>
-                <a href="tel:+51968624020" class="btn" target="_blank">ordene ahora</a>
-            </div>
-    
-            <div class="box">
-                <a class="fas fa-heart"></a>
-                <img src="images/dish-2.png" alt="">
-                <h3>Tequila Jose Cuervo 1800</h3>
-                <div class="stars">
-                    <i>Reposado Botella 750ml </i>
-                </div>
-                <span>Precio especial</span>
-                <a href="tel:+51968624020" class="btn" target="_blank">ordene ahora</a>
-            </div>
-    
-            <div class="box">
-                <a class="fas fa-heart"></a>
-                <img src="images/dish-3.png" alt="">
-                <h3>Licor RC El Aguajal</h3>
-                <div class="stars">
-                    <i>Botella de 700ml 22°</i>
-                </div>
-                <span>Precio especial</span>
-                <a href="tel:+51968624020" class="btn" target="_blank">ordene ahora</a>
-            </div>
-    
-            <div class="box">
-                <a class="fas fa-heart"></a>
-                <img src="images/dish-4.png" alt="">
-                <h3>Ron Flor de Caña 4 Años Añejo Oro</h3>
-                <div class="stars">
-                    <i>Botella 750ml</i>
-                </div>
-                <span>Precio especial</span>
-                <a href="tel:+51968624020" class="btn" target="_blank">ordene ahora</a>
-            </div>
-    
-            <div class="box">
-                <a class="fas fa-heart"></a>
-                <img src="images/dish-5.png" alt="">
-                <h3>Whisky JACK DANIEL'S Old Black </h3>
-                <div class="stars">
-                    <i>Botella 750ml N°7</i>
-                </div>
-                <span>Precio especial</span>
-                <a href="tel:+51968624020" class="btn" target="_blank">ordene ahora</a>
-            </div>
-    
-            <div class="box">
-                <a class="fas fa-heart"></a>
-                <img src="images/dish-6.png" alt="">
-                <h3>Tequila José Cuervo Especial Silver</h3>
-                <div class="stars">
-                    <i>Botella 750ml</i>
-                </div>
-                <span>Precio especial</span>
-                <a href="tel:+51968624020" class="btn" target="_blank">ordene ahora</a>
-            </div>
-
-            <div class="box">
-                <a class="fas fa-heart"></a>
-                <img src="images/dish-7.png" alt="">
-                <h3>Licor Tres Plumas Blue Curacao</h3>
-                <div class="stars">
-                    <i>Botella 700ml</i>
-                </div>
-                <span>Precio especial</span>
-                <a href="tel:+51968624020" class="btn" target="_blank">ordene ahora</a>
-            </div>
-
-            <div class="box">
-                <a class="fas fa-heart"></a>
-                <img src="images/dish-8.png" alt="">
-                <h3>Licor Uña de Gato El Aguajal</h3>
-                <div class="stars">
-                    <i>Botella de 700ml 38°</i>
-                </div>
-                <span>Precio especial</span>
-                <a href="tel:+51968624020" class="btn" target="_blank">ordene ahora</a>
-            </div>
-
-            <div class="box">
-                <a class="fas fa-heart"></a>
-                <img src="images/dish-9.png" alt="">
-                <h3>Licor Uvachado El Aguajal de la Selva</h3>
-                <div class="stars">
-                    <i>Botella de 700ml 14°</i>
-                </div>
-                <span>Precio especial</span>
-                <a href="tel:+51968624020" class="btn" target="_blank">ordene ahora</a>
-            </div>
-    
-        </div>
-    
-    </section>
-    <!-- finalizando seccion de bebidas  -->
-
-    <!-- iniciando seccion de nosotros  -->
-    <section class="nosotros" id="nosotros">
-
-        <h3 class="sub-heading"> sobre nosotros </h3>
-        <h1 class="heading"> ¿por que elegirnos? </h1>
-    
-        <div class="row">
-    
-            <div class="image">
-                <img src="images/about-img.png" alt="">
-            </div>
-    
-            <div class="content">
-                <h3>Somos el mejor distribuidor de bebidas alcoholica de la región</h3>
-                <p>Somos una cadena de bebidas de la ciudad, nos dedicamos a la venta al por mayor y menor de los mejores licores, ofrecemos bebidas de toda variedad nacionales e importados como Wisky, Ron, Vodkas, Champán, pisco, vinos y cervezas.</p>
-                <p>Variedad, servicio y garantía, han sido siempre nuestros pilares, donde lo más importante, ha sido que todos nuestros clientes vivan una experiencia positiva a través de cada botella abierta, gracias por estar acá por tu fidelidad y preferencia que nos da la oportunidad de seguir creciendo.</p>
-                <div class="icons-container">
-                    <div class="icons">
-                        <i class="fas fa-shipping-fast"></i>
-                        <span>delivery rápido</span>
-                    </div>
-                    <div class="icons">
-                        <i class="fas fa-dollar-sign"></i>
-                        <span>pago facil</span>
-                    </div>
-                    <div class="icons">
-                        <i class="fas fa-headset"></i>
-                        <span>servicio 24/7</span>
-                    </div>
-                </div>
-                <a href="tel:+51968624020" class="btn" target="_blank">contactenos</a>
-            </div>
-    
-        </div>
-    
-    </section>
-    <!-- finalizando seccion con nosotros  -->
-
-    <!-- sección de menu iniciando  -->
-    <section class="productos" id="productos">
-
-        <h3 class="sub-heading"> nuestros productos </h3>
-        <h1 class="heading"> disfrute de los licores de buena calidad </h1>
-    
-        <div class="box-container">
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-1.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Licor tres plumas</h3>
-                    <p> blue curacao 700ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-2.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Tequila Jose Cuervo</h3>
-                    <p>1800 Reposado Botella 750ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-3.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Licor RC El Aguajal</h3>
-                    <p>Bebida de 700ml 22°</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-4.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Flor de caña</h3>
-                    <p>4 años Anejo Oro Botella 750ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-5.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Whisky Jack Daniels Odl</h3>
-                    <p>N°7 botella 750ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-6.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Cerveza cusqueña Rubia</h3>
-                    <p>Bebida de 330 ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-7.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Vino tinto Toro Viejo</h3>
-                    <p>Syrah Malbec 750ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-8.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Absolut VODKA Original</h3>
-                    <p>Botella de 750ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-9.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>curacao blanc triple sec</h3>
-                    <p>Botella de 700ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-10.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Tres plumas Frutilla</h3>
-                    <p>Curacao 700ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-11.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Licor Uña de Gato </h3>
-                    <p>El aguajal 38°</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-12.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Licor Uvachado</h3>
-                    <p>El Aguajal 700ml 14°</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-13.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Licor ChuchuHuasi</h3>
-                    <p>El Aguajal 750ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-14.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Whisky Grand Old Parr</h3>
-                    <p>12 años extra Rich Botella 750ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-15.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Tres plumas Chocolate a la Almendra</h3>
-                    <p>Botella de 700cc</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-16.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Tres Plumas café al Whisky</h3>
-                    <p>Botella de 750cc</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-17.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Tres Plumas Cremas Dulce de Leche</h3>
-                    <p>Botella de 700cc</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-18.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Tres plumas Kiwi</h3>
-                    <p>Botella de 700ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-19.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Ron Medellin Añejo</h3>
-                    <p>Botella de 750ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-20.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>VaAT 69 Whisky</h3>
-                    <p>Botella de 700ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-21.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Vino Rio Rica</h3>
-                    <p>Red Blend Tinto Dulce 750ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-22.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Cerveza Pilsen Callao</h3>
-                    <p>Natural y sin preservantes</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-23.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Cerveza Stella Artois Lager</h3>
-                    <p>Botella de 335ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-24.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Vodka RussKaya Pink</h3>
-                    <p>Botella de 750ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-25.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Pisco Vargas Puro</h3>
-                    <p>Botella de 750ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-26.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Vino Tabernero borgoña</h3>
-                    <p>Botella de 750ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/menu-27.png" alt="">
-                    <a class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <h3>Cerveza Budweiser</h3>
-                    <p>botella de 600ml</p>
-                    <a href="tel:+51968624020" class="btn" target="_blank">Contactenos</a>
-                </div>
-            </div>
-    
-        </div>
-    
-    </section>
-    <!-- finaizando seccion de menu  -->
-
-    <!-- parte de contactenos inicio  -->
-    <section class="contactenos" id="contactenos">
-
-        <h3 class="sub-heading"> Nuestro Local en Huánuco  </h3>
-        <h1 class="heading">JR independencia 608 </h1>
-        <h4> esquina con Tarapacá , Huánuco, Peru</h4>
-    
-        <div class="row">
-            <div class="maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491.25599318935434!2d-76.24733080563435!3d-9.929965179905055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a7c3369e118961%3A0x906e65d7067dea01!2sLICORERIA%20ENTRE%20PISCO%20Y%20NAZCA!5e0!3m2!1ses!2spe!4v1655758928648!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-    
-            <div class="content">
-                <h3>Para más información</h3>
-                <p>Bebidas de toda variedad nacionales e importados como Whisky,ron,vodkas, champán, pisco,vinos,cervezas</p>
-                <a href="https://www.facebook.com/entrepiscoynazca01/" class="btn" target="_blank">Facebook</a>
-                <a href="http://wa.me/51968624020?text=Quiero%20consultar%20sobre%20la%20bebida,%20mí%20nombre%20es:%20" class="btn" target="_blank">whatsapp</a>
-                <a href="tel:+51968624020" class="btn" target="_blank">contactenos</a>
-            </div>
-    
-        </div>
-    
-    </section>
-    <!-- parte final de contactenos  -->
-
-    <!-- inicio footer de la pagina   -->
-    <section class="footer">
-
-        <div class="box-container">
-    
-            <div class="box">
-                <h3>Ubicación</h3>
-                <a href="https://www.google.com/maps/place/LICORERIA+ENTRE+PISCO+Y+NAZCA/@-9.9299652,-76.2473308,20z/data=!4m5!3m4!1s0x91a7c3369e118961:0x906e65d7067dea01!8m2!3d-9.9300226!4d-76.2473069" target="_blank">Huánuco - Perú </a>
-            </div>
-    
-            <div class="box">
-                <h3>Horarios de atención</h3>
-                <a>Siempre abierto</a>
-
-            </div>
-    
-            <div class="box">
-                <h3>Contactenos</h3>
-                <a>+51 968 624 020</a>
-                <a>luis_1470rc@hotmail.com</a>
-                <a>JR independencia 608</a>
-            </div>
-    
-            <div class="box">
-                <h3>Redes sociales</h3>
-                <a href="https://www.facebook.com/entrepiscoynazca01/" target="_blank">facebook</a>
-                <a href="http://wa.me/51968624020?text=Quiero%20consultar%20sobre%20la%20bebida,%20mí%20nombre%20es:%20" target="_blank">whatsapp</a>
-            </div>
-    
-        </div>
-    
-        <div class="credit"> copyright @ 2022 by <span>EntrePiscoYNazca</span> </div>
-    
-    </section>
-    <!-- fin del footer de la pagina  -->
-
-    <!-- cargando pagina  -->
-    <div class="loader-container">
-        <img src="images/loader.gif" alt="">
+      </div>
     </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- seccion de js  -->
-    <script src="js/script.js"></script>
-</body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <img src="images/LogoTienda.png" alt="" width="44" height="44" />
+        <span>Entre Pisco y Nazca</span>
+      </a>
+
+      <nav class="nav" id="siteNav" aria-label="Navegacion principal">
+        <a class="active" href="#inicio">Inicio</a>
+        <a href="#destacados">Destacados</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#catalogo">Catalogo</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="icon-link" href="tel:+51968624020" aria-label="Llamar a la tienda">☎</a>
+        <button class="icon-link" id="menuButton" type="button" aria-controls="siteNav" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero__content">
+          <p class="eyebrow">Delivery de licores y bebidas</p>
+          <h1>Licoreria Entre Pisco y Nazca</h1>
+          <p class="hero__copy">
+            Catalogo digital moderno para ordenar combos, vinos, cervezas,
+            piscos, rones, whiskies y licores seleccionados con atencion rapida.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#catalogo">Ver catalogo</a>
+            <a class="btn btn--ghost" href="tel:+51968624020">Llamar ahora</a>
+          </div>
+          <dl class="hero__stats" aria-label="Beneficios principales">
+            <div>
+              <dt>24/7</dt>
+              <dd>Atencion</dd>
+            </div>
+            <div>
+              <dt>+35</dt>
+              <dd>Productos</dd>
+            </div>
+            <div>
+              <dt>Local</dt>
+              <dd>Pedido directo</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__showcase" aria-label="Promociones destacadas">
+          <button class="slider-button slider-button--prev" data-slider-prev type="button" aria-label="Promocion anterior">
+            ‹
+          </button>
+          <div class="hero-slider" data-hero-slider></div>
+          <button class="slider-button slider-button--next" data-slider-next type="button" aria-label="Promocion siguiente">
+            ›
+          </button>
+        </div>
+      </section>
+
+      <section class="section" id="destacados">
+        <div class="section__header">
+          <p class="eyebrow">Seleccion popular</p>
+          <h2>Bebidas destacadas</h2>
+          <p>Opciones de alta rotacion para pedidos rapidos y celebraciones.</p>
+        </div>
+        <div class="featured-grid" data-featured-grid></div>
+      </section>
+
+      <section class="section about" id="nosotros">
+        <div class="about__media">
+          <img src="images/about-img.png" alt="Botellas y bebidas premium" loading="lazy" />
+        </div>
+        <div class="about__content">
+          <p class="eyebrow">Sobre nosotros</p>
+          <h2>Variedad, servicio y compra directa</h2>
+          <p>
+            Somos una tienda especializada en bebidas nacionales e importadas.
+            Priorizamos catalogo claro, respuesta rapida y una experiencia de
+            compra simple desde cualquier dispositivo.
+          </p>
+          <div class="benefits">
+            <article>
+              <span>↗</span>
+              <h3>Delivery rapido</h3>
+              <p>Coordina tu pedido por telefono o WhatsApp.</p>
+            </article>
+            <article>
+              <span>✓</span>
+              <h3>Catalogo claro</h3>
+              <p>Filtra por categoria y encuentra productos en segundos.</p>
+            </article>
+            <article>
+              <span>★</span>
+              <h3>Atencion directa</h3>
+              <p>Sin intermediarios ni registro obligatorio.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section catalog" id="catalogo">
+        <div class="section__header section__header--split">
+          <div>
+            <p class="eyebrow">Catalogo</p>
+            <h2>Explora productos</h2>
+          </div>
+          <div class="catalog-tools">
+            <label class="search-box">
+              <span>Buscar</span>
+              <input id="searchInput" type="search" placeholder="Whisky, pisco, cerveza..." autocomplete="off" />
+            </label>
+            <label class="select-box">
+              <span>Categoria</span>
+              <select id="categoryFilter"></select>
+            </label>
+          </div>
+        </div>
+
+        <div class="catalog-summary" aria-live="polite">
+          <span id="resultCount">0 productos</span>
+          <button class="link-button" id="clearFilters" type="button">Limpiar filtros</button>
+        </div>
+
+        <div class="product-grid" data-product-grid></div>
+      </section>
+
+      <section class="section contact" id="contacto">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2>Haz tu pedido ahora</h2>
+          <p>
+            Agrega productos al pedido y envia el resumen por WhatsApp, o llama
+            directamente para coordinar disponibilidad y delivery.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn--primary" href="tel:+51968624020">Llamar</a>
+            <a class="btn btn--ghost" id="whatsappDirect" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+        </div>
+        <aside class="order-card" aria-labelledby="orderTitle">
+          <div class="order-card__header">
+            <h3 id="orderTitle">Pedido rapido</h3>
+            <button class="link-button" id="clearOrder" type="button">Vaciar</button>
+          </div>
+          <ul class="order-list" id="orderList"></ul>
+          <p class="order-empty" id="orderEmpty">Agrega productos desde el catalogo.</p>
+          <a class="btn btn--primary btn--full" id="sendOrder" target="_blank" rel="noopener noreferrer">
+            Enviar pedido
+          </a>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>Licoreria Entre Pisco y Nazca</strong>
+        <p>Venta de bebidas alcoholicas. Prohibida la venta a menores de edad.</p>
+      </div>
+      <a href="#inicio">Volver arriba</a>
+    </footer>
+  </body>
 </html>

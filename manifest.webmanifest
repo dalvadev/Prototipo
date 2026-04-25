@@ -1,0 +1,21 @@
+{
+  "name": "Licoreria Entre Pisco y Nazca",
+  "short_name": "Pisco y Nazca",
+  "description": "Catalogo digital de licores con pedido rapido.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fbf7f2",
+  "theme_color": "#7f1d1d",
+  "icons": [
+    {
+      "src": "images/LogoTienda.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/Logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
