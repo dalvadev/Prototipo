@@ -37,6 +37,7 @@ html css javascript ecommerce catalog pwa github-pages responsive-design
 - Pedido rapido persistido en `localStorage`.
 - Envio del resumen por WhatsApp.
 - CTA telefonico directo.
+- Mapa embebido de la tienda fisica en Huanuco.
 - Carousel propio sin dependencias externas.
 - Confirmacion de mayoria de edad antes de navegar.
 - SEO basico con metadata y Open Graph.
@@ -146,6 +147,7 @@ El service worker aplica una estrategia cache-first para assets estaticos y fall
 - Filtros sin recarga de pagina.
 - Persistencia local del pedido.
 - Cache de assets estaticos mediante service worker.
+- Ubicacion visible con Google Maps embebido y enlace externo.
 - Archivos de logs locales ignorados por Git.
 
 ## Roadmap sugerido
